@@ -1,0 +1,104 @@
+/* GENERAL INLINES ********************************************************** */
+/* ************************************************************************** */
+
+a {
+    text-decoration: none;
+    color: $almost-black;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: $link-action;
+    background-color: $bg-highlight;
+}
+
+
+em,
+q {
+    @include italic-font;
+}
+
+
+strong,
+.exercisenumber,
+.exercisepart {
+    @include bold-font;
+}
+
+kbd {
+    @include paddings-small;
+    font-variant: small-caps;
+    font-size: $smaller;
+    background: $almost-black;
+    color: $almost-white;
+}
+
+sub, sup {
+    font-size: $smaller;
+    a {
+        margin-left: -0.3em;
+    }
+}
+
+sub {
+    vertical-align: sub;
+}
+
+sup,
+annoref,
+.annoref,
+noteref,
+.noteref {
+    vertical-align: super;
+}
+
+abbr,
+acronym {
+    @include dotted-underline-thin ($accent-color-1);
+}
+
+dfn,
+cite title {
+    @include dotted-underline-thin ($almost-black);
+}
+
+code {
+    @include monospace-font;
+}
+
+annoref,
+.annoref,
+noteref,
+.noteref {
+    font-size: $smallest;
+    @include inline-padding;
+}
+
+annoref,
+.annoref {
+    @include dotted-underline-thin ($grey);    
+}
+
+noteref,
+.noteref {
+    @include borders-thin ($accent-color-1);
+}
+
+sent, w {
+    @include margins-no-margins;
+}
+
+
+linenum:after {
+    content: " ";
+}
+
+.highlight {
+//    coloured background
+//    background-color: saturate(lighten($alt-bg-color-3, 5%), 40%);
+
+//    inverted colours
+    background-color: $dark-grey;
+    color: $light-gray;
+}

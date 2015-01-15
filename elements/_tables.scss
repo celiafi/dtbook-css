@@ -1,0 +1,120 @@
+/* TABLES ******************************************************************* */
+/* ************************************************************************** */
+
+table {
+    @include margins-mid;
+    @include borders-thin($border-color);
+    background-color: $accent-color-2;
+
+    width: $narrow;
+    empty-cells: show;
+    table-layout: auto;
+    //border-collapse breaks stuff, see alternatives
+    //border-collapse: collapse;
+    border-spacing: 0;
+    caption {
+        text-align: center;
+    }
+
+    td, th {
+        @include alt-font;
+    }
+}
+
+tbody {
+  vertical-align: middle;
+}
+
+thead {
+  vertical-align: middle;
+}
+
+tfoot {
+  vertical-align: middle;
+}
+
+
+
+td {
+    @include box-padding;
+    @include default-box-borders($border-color);
+    background-color: $background-color;
+    text-align: left;
+    height: auto;
+    width: 50%;
+    vertical-align: inherit;
+}
+
+
+td.keskitetty+img, td.keskitetty {
+    text-align: center;
+}
+
+th {
+    border: thin solid gray;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+table+caption {
+    font-weight: bold;
+}
+
+
+
+
+/* TABLE NO BORDERS */
+table.noborder,
+table.noborder *{
+    border: none;
+}
+
+
+/* 3-7 saraketta */
+.sarakkeita3 {
+    td {
+        width: 32%
+    }
+}
+
+.sarakkeita4 {
+    td {
+        width: 24%
+    }
+}
+
+.sarakkeita5 {
+    td {
+        width: 19%
+    }
+}
+
+.sarakkeita6 {
+    td {
+        width: 14%
+    }
+}
+
+.sarakkeita7 {
+    td {
+        width: 13%
+    }
+}
+
+.sarakkeita8 {
+    td {
+        width: 11%;
+    }
+}
+
+.sarakkeita9 {
+    td {
+        width: 10%;
+    }
+}
+
+.sarakkeita10 {
+    td {
+        width: 9%;
+    }
+}

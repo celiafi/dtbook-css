@@ -1,0 +1,45 @@
+/* NAVIGATION HEADERS ******************************************************* */
+/* ************************************************************************** */
+div.nav {
+    background-color: $light-accent;
+    border: thin solid $grey;
+    padding: 0.5em;
+
+    p {
+        margin: 0;
+        padding: 0;
+        color: $dark-grey;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    a {
+        color: $dark-grey;
+    }
+
+    a:hover,
+    a:active,
+    a:focus {
+        color: $almost-black;
+        text-decoration: underline;
+        background-color: $grey;
+    }
+
+    span {
+        width: 33.33%;
+    }
+
+    .prev {
+        text-align: left;
+    }
+
+    .main {
+        text-align: center;
+    }
+
+    .next {
+        text-align: right;
+    }
+}

@@ -1,0 +1,39 @@
+/* AUTHOR: Jukka Eerikainen
+ * Created 27-05-2014
+ * Last revision 19-11-2014
+ */
+
+
+/* NAMESPACE DECLARATIONS *************************************************** */
+/* ************************************************************************** */
+@namespace oxy url('http://www.oxygenxml.com/extensions/author');
+
+
+/* IMPORT PARTIALS ********************************************************** */
+/* ************************************************************************** */
+@import 'globals/_reset.scss';
+
+@import 'globals/_colors.scss';
+@import 'globals/_variables.scss';
+@import 'globals/_mixins.scss';
+@import 'globals/_margins.scss';
+@import 'globals/_borders.scss';
+@import 'globals/_paddings.scss';
+@import 'globals/_fonts.scss';
+
+@import 'elements/_blocks.scss';
+@import 'elements/_bookbody.scss';
+@import 'elements/_breaks.scss';
+@import 'elements/_headings.scss';
+@import 'elements/_images.scss';
+@import 'elements/_inlines.scss';
+@import 'elements/_kehys.scss';
+@import 'elements/_laatikko.scss';
+@import 'elements/_lists.scss';
+@import 'elements/_nav.scss';
+@import 'elements/_p.scss';
+@import 'elements/_pagenums.scss';
+@import 'elements/_pohja.scss';
+@import 'elements/_tables.scss';
+
+@import 'oxygen/_oxygen.scss';

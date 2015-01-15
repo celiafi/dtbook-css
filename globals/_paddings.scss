@@ -1,0 +1,25 @@
+@mixin inline-padding {
+    padding-left:   0.5em;
+    padding-right:  0.5em;
+}
+
+@mixin box-padding {
+    padding-top:    1em;
+    padding-bottom: 1em;
+    padding-left:   1em;
+    padding-right:  1em;
+}
+
+@mixin paddings-large {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+@mixin paddings-small {
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}

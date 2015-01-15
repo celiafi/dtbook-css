@@ -1,0 +1,24 @@
+/* IMAGES ******************************************************************* */
+/* ************************************************************************** */
+
+imggroup,
+.imggroup {
+    @include margins-mid;
+    
+    caption, .caption {
+        @include alt-font;
+    }
+}
+
+img {
+    @include rounded-corners;
+    max-width: 100%;
+    height: auto;
+    /* for oxygen */
+    content: attr(src, url);
+}
+
+.image-caption {
+    margin-top: 2em;
+    margin-bottom: 1.2em;
+}

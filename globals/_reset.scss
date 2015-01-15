@@ -1,0 +1,122 @@
+/* DISPLAY RULES ************************************************************ */
+/* ************************************************************************** */
+
+head, head * {
+  display: none;
+}
+
+dtbook,
+
+address,
+blockquote,
+caption,
+div,
+ol,
+ul,
+h1, h2, h3, h4, h5, h6,
+levelhd, bridgehead, hd,
+docauthor,
+epigraph,
+byline,
+dateline,
+imggroup,
+note,
+notice,
+pl,
+prodnote,
+sidebar,
+line,
+list,
+.caption,
+.prodnote,
+.sidebar,
+.imggroup,
+.subTitle,
+.author,
+.image-caption,
+.page-normal,
+.page-special,
+.page-front,
+.pagenum,
+pagenum,
+
+book, body,
+
+frontmatter, .frontmatter,
+bodymatter, .bodymatter,
+rearmatter, .rearmatter {
+  display: block;
+}
+
+
+a,
+abbr,
+acronym,
+code,
+dfn,
+em,
+kbd,
+samp,
+cite,
+cite author,
+cite title,
+q,
+span,
+sub,
+sup,
+bdo,
+lic,
+linenum,
+w,
+sent,
+annoref,
+noteref,
+.annoref,
+.noteref {
+  display: inline;
+}
+
+
+table {
+  display: table;
+}
+
+tr {
+  display: table-row;
+}
+
+col {
+  display: table-column;
+}
+
+colgroup {
+  display: table-column-group;
+}
+
+tbody {
+  display: table-row-group;
+}
+
+thead {
+  display: table-header-group;
+}
+
+tfoot {
+  display: table-footer-group;
+}
+
+td {
+  display: table-cell;
+}
+
+table caption {
+  display: table-caption;
+}
+
+li {
+  display: list-item;
+}
+
+dl, dt, dd {
+    display: block;
+}

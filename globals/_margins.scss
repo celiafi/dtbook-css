@@ -1,0 +1,41 @@
+@mixin margins-no-margins {
+    margin-top:     0;
+    margin-bottom:  0;
+    margin-left:    0;
+    margin-right:   0;
+}
+
+@mixin margins-tiny {
+    margin-top:     0.5em;
+    margin-bottom:  0;
+}
+
+@mixin margins-smallest {
+    margin-top:     0.7em;
+    margin-bottom:  0;
+}
+
+@mixin margins-smaller {
+    margin-top:     1em;
+    margin-bottom:  1em;
+}
+
+@mixin margins-mid {
+    margin-top:     2em;
+    margin-bottom:  1em;
+}
+
+@mixin margins-large {
+    margin-top:     3em;
+    margin-bottom:  1em;
+}
+
+@mixin margins-bottom-mid {
+    margin-top:     0;
+    margin-bottom:  1.5em;
+}
+
+@mixin margins-bottom-small {
+    margin-top:     0;
+    margin-bottom:  0.8em;
+}

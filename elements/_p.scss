@@ -1,0 +1,15 @@
+p {
+  display: block;
+  @include margins-smallest;
+}
+
+.johdanto {
+  @include bold-font;
+}
+
+.lahdeviite {
+  @include alt-font;
+  @include margins-tiny;
+  font-size: $smallest;
+  font-style: italic;
+}

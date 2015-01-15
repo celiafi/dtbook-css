@@ -1,0 +1,124 @@
+/* GENERAL BLOCK ELEMENTS *************************************************** */
+/* ************************************************************************** */
+prodnote, notice, .prodnote {
+    @include alt-font;
+    @include margins-smaller;
+    @include paddings-small;
+    @include borders-thin($alt-margin-1);
+
+    background-color: $background-color;
+}
+
+.optional-prodnote a {
+    color: $almost-black;
+}
+
+sidebar, div.sidebar {
+    @include margins-mid;
+    @include paddings-large;
+    background-color: $alt-bg-color-1;
+}
+
+div sidebar,
+prodnote sidebar,
+sidebar sidebar,
+note sidebar,
+annotation sidebar,
+blockquote sidebar,
+dd sidebar,
+li sidebar,
+th sidebar,
+td sidebar {
+    float: right;
+    width: inherit;
+    clear: both;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+address {
+    @include margins-mid;
+}
+
+.annotation {
+    font-size: $smaller;
+    border: thin dotted $grey;
+    padding: 1em;
+}
+
+note {
+    @include margins-mid;
+    @include box-padding;
+    border-top: thin solid $almost-black;
+    border-bottom: thin solid $almost-black;
+}
+
+.notebody {
+    font-size: $smaller;
+    border: thin dotted $grey;
+    @include box-padding;
+}
+
+blockquote {
+    @include italic-font;
+    font-size: $smallest;
+    @include margins-large;
+}
+
+line {
+    margin: 0;
+}
+
+linegroup, .linegroup {
+    @include margins-smallest;
+    line-height: $default-line-height;
+}
+
+.line {
+    line-height: $default-line-height;
+
+    img {
+        line-height: $default-line-height;
+        margin-bottom: 1em;
+    }
+}
+
+.author {
+    @include bold-font;
+}
+
+.dateline {
+    font-size: $smallest;
+    font-style: italic;
+}
+
+.byline {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+div.title {
+    font-weight: bold;
+    font-size: $larger;
+    margin-top: 2em;
+}
+
+poem,
+.poem {
+    @include default-font;
+    @include margins-mid;
+    @include box-padding;
+    background-color: $alt-bg-color-1;
+    border: thin solid $grey;
+        div.hd {
+        @include bold-font;
+        @include margins-smaller;
+    }
+}
+
+
+epigraph {
+    @include margins-mid;
+    @include italic-font;
+}

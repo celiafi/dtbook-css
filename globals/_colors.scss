@@ -1,0 +1,71 @@
+/* COLORS */
+
+/* Color adjustment variables */
+// TODO NOT CORRECT VALUES
+$lightness-difference:  30%;
+$saturation-difference: 15%;
+
+/* HSL values */
+$h0:  37deg;
+$h1:  124deg;
+$h2:  212deg;
+$h3:  25deg;
+
+$s0:  70%;
+$l0:  78%;
+
+
+
+/* Descriptive colors */
+
+// ORANGE
+$h0-s2: hsl($h0, $s0, $l0);
+$h0-s3: hsl($h0, 100%, 73%);
+$h0-s4: hsl($h0, 100%, 62%);
+
+// TURQUOISE
+$h1-s2: hsl($h1, $s0, $l0);
+$h1-s3: hsl($h1, 54%, 59%);
+$h1-s4: hsl($h1, 63%, 44%);
+
+// BLUE
+$h2-s2: hsl($h2, $s0, $l0);
+$h2-s3: hsl($h2, 51%, 61%);
+$h2-s4: hsl($h2, 54%, 46%);
+
+// RED
+$h3-s2: hsl($h3, $s0, $l0);
+$h3-s3: hsl($h3, 100%, 73%);
+$h3-s4: hsl($h3, 100%, 62%);
+
+// FIVE SHADES OF GRAY
+$almost-white:  #FAFAFA;
+$light-gray:    #E6E6E6;
+$grey:          #CCCCCC;
+$dark-grey:     #666666;
+$almost-black:  #333333;
+
+
+/* Functional colors */
+$page-background-color:     $almost-white;
+$background-color:          $light-gray;
+$border-color:              $dark-grey;
+$text-color:                $almost-black;
+
+$alt-bg-color-1:            $h1-s2;
+$alt-bg-color-2:            $h2-s2;
+$alt-bg-color-3:            $h3-s2;
+
+$accent-color-1:            $h1-s3;
+$accent-color-2:            $h2-s3;
+$accent-color-3:            $h3-s3;
+
+$alt-margin-1:              $h0-s4;
+$alt-margin-2:              $h0-s4;
+$alt-margin-3:              $h0-s4;
+
+
+$note-bg-color:             $h2-s3;
+$light-accent:              $h1-s4;
+$link-action:               $h3-s4;
+$bg-highlight:              $h3-s4;

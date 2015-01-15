@@ -1,0 +1,31 @@
+@mixin default-font($height: $default-line-height) {
+    color:          $text-color;
+    font-family:    verdana, sans-serif;
+    font-size:      100%;
+    font-style:     normal;
+    line-height:    $height;
+
+    letter-spacing: $letter-spacing-default;
+    word-spacing:   $word-spacing-default;
+}
+
+@mixin alt-font($height: $default-line-height) {
+    @include default-font($height);
+    font-size:      $smaller;
+    line-height:    $tighter;
+}
+
+@mixin bold-font {
+    font-weight:    bold;
+    letter-spacing: $letter-spacing-wide;
+}
+
+@mixin italic-font {
+    font-style:     italic;
+}
+
+@mixin monospace-font($height: $default-line-height) {
+    @include default-font($height);
+    letter-spacing: $letter-spacing-wide;
+    font-family:    "Lucida Console", sans-serif;
+}

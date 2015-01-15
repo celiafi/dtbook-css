@@ -1,0 +1,36 @@
+@mixin default-box-borders($color: $almost-black) {
+    border-style:   solid;
+    border-width:   2px;
+    border-color:   $color;
+}
+
+@mixin borders-thin($color: $almost-black) {
+    border-style:   solid;
+    border-width:   1px;
+    border-color:   $color;
+}
+
+@mixin dotted-border($color: $almost-black) {
+    border-style:   dotted;
+    border-width:   2px;
+    border-color:   $color;
+}
+
+@mixin dotted-underline($color: $almost-black) {
+    border-bottom-style:    dotted;
+    border-color:           $color;
+    padding-bottom:         0.25em;
+}
+
+@mixin dotted-underline-thin($color: $almost-black) {
+    border-bottom-style:    dotted;
+    border-bottom-width:    thin;
+    border-color:           $color;
+}
+
+@mixin underline($color: $almost-black) {
+    border-bottom-style:    solid;
+    border-width:           2px;
+    border-color:           $color;
+    padding-bottom:         0.25em;
+}

@@ -1,0 +1,81 @@
+/* BASE ********************************************************************* */
+/* ************************************************************************** */
+
+dtbook {
+    width: $default-width;
+}
+
+book, body {
+    @include default-font;
+    max-width:          100%;
+    background-color:   $background-color;
+    margin-top:         0;
+    margin-bottom:      0;
+    margin-right:       auto;
+}
+
+/* FRONTMATTER ************************************************************** */
+/* ************************************************************************** */
+frontmatter, .frontmatter,
+bodymatter, .bodymatter,
+rearmatter, .rearmatter {
+    @include margins-large;
+
+    background-color: $background-color;
+    
+    // Width is set to a percentage, while max-width is set to a constant
+    // pixel amount.
+    // This is very important to achieve desired rendering in different
+    // use cases:
+    //
+    // - If the user has a large, high-resolution screen, content width
+    // is clamped to (say) 750 pixels. The lines don't get too long
+    // and the text stays readable. Only the whitespace in the left and
+    // right margins is stretched.
+    //
+    // - If the user has a smaller, low-resolution screen, the content
+    // width gets the value set in width parameter. The content stays
+    // within the viewport boundaries and they don't need to scroll
+    /// sideways.
+    //
+    // - If the user zooms in, as is often the case with e.g. users with low
+    // vision, the content stays within the viewport boundaries.
+    width: $narrow;
+    max-width: $page-width;
+
+    // No top or bottom margins to ensure seamless presentation in reader
+    // software.
+    // Left and right margins set to auto to center content.
+    margin-top:     0;
+    margin-bottom:  0;
+    margin-left:    auto;
+    margin-right:   auto;
+    
+    padding-left:   2em;
+    padding-right:  2em;
+    padding-bottom: 2em;
+    padding-top:    2em;
+}
+
+
+doctitle, covertitle, .doctitle {
+    @include default-font;
+    @include margins-large;
+    font-size: $huge;
+    font-weight: bold;
+}
+
+docauthor {
+    @include default-font;
+}
+
+.subTitle {
+    font-size: $tiny;
+    margin-top: 1em;
+}
+
+.author {
+    @include default-font;
+    @include margins-mid;
+    font-size: 140%;
+}

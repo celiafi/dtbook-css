@@ -1,0 +1,39 @@
+/* TEMPLATE ***************************************************************** */
+/* ************************************************************************** */
+
+@mixin kehys($color: $almost-black) {
+    @include margins-mid;
+    margin-left: 2em;
+    border-left-style: dotted;
+    border-left-width: 4px;
+    border-color: $color;
+    padding-left: 1em;
+    padding-top: 0;
+    line-height: $tight;
+    li {
+        line-height: $tighter;
+    }
+
+    .heading, .otsikko, h2, h3, h4, h5, h6 {
+        @include default-font($looser);
+        font-size: $large;
+        font-weight: bold;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+    }
+}
+
+
+
+/* KEHYKSET */
+.kehys1 {
+    @include kehys($accent-color-1);
+}
+
+.kehys2 {
+    @include kehys($accent-color-2);
+}
+
+.kehys3 {
+    @include kehys($accent-color-3);
+}

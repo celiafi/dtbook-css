@@ -1,0 +1,14 @@
+/* PAGENUM, LINENUM ********************************************************* */
+/* ************************************************************************** */
+
+.page-normal,
+.page-special,
+.page-front,
+.pagenum,
+pagenum {
+    @include margins-large;
+    text-align: right;
+    font-weight: bold;
+    border-top: solid thin $almost-black;
+    padding-top: 2em;
+}

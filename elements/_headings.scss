@@ -1,0 +1,44 @@
+/* HEADINGS ***************************************************************** */
+/* ************************************************************************** */
+
+/* BASE ********************************************************************* */
+h1, h2, h3, h4, h5, h6, levelhd, bridgehead, hd {
+    @include bold-font;
+    @include margins-large;
+    font-weight: bold;
+}
+
+h1, level > levelhd {
+    font-size: $huge;
+}
+
+h2, level > level > levelhd {
+    font-size: $largest;
+}
+
+h3, level > level > level > levelhd {
+    font-size: $larger;
+}
+
+h4, level > level > level > level > levelhd {
+    font-size: $large;
+}
+
+h5, level > level > level > level > level > levelhd {
+    font-size: $large;
+}
+
+h6, level > level > level > level > level > level > levelhd {
+    font-size: $default-font-size;
+}
+
+bridgehead, hd {
+    @include margins-smallest;
+    font-size: $default-font-size;
+}
+
+.heading, .otsikko {
+    @include margins-bottom-small;
+    @include bold-font;
+    font-size: $larger;
+}

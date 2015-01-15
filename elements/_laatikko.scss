@@ -1,0 +1,41 @@
+/* TEMPLATE ***************************************************************** */
+/* ************************************************************************** */
+
+@mixin laatikko($color: black) {
+    @include margins-large;
+    @include default-box-borders($color);
+    padding-left: 0;
+    
+    > * {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    li {
+        line-height: $tight;
+    }
+
+    .heading, .otsikko, h2, h3, h4, h5, h6 {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 1em;
+        background-color: $color;
+    }
+}
+
+
+
+/* LAATIKOT */
+.laatikko1 {
+    @include laatikko($alt-bg-color-1);
+}
+
+.laatikko2 {
+    @include laatikko($alt-bg-color-2);
+}
+
+.laatikko3 {
+    @include laatikko($alt-bg-color-3);
+}

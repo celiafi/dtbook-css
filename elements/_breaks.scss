@@ -1,0 +1,14 @@
+/* Render line breaks after br tags. !important is required for Oxygen. */
+br {
+    display: inline !important;
+    &::after {
+        content: "\a";
+        white-space: normal;
+        visibility: hidden;
+    }
+}
+
+hr {
+  @include margins-bottom-mid;
+  color: $accent-color-1;
+}
