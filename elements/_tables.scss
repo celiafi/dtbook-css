@@ -70,16 +70,17 @@ table.noborder *{
 }
 
 
-/* 3-7 saraketta */
+/* Tables with over 3 columns */
+/* Magic numbers discovered by experimentation and much frustration. */
 .sarakkeita3 {
     td {
-        width: 32%
+        width: 35%
     }
 }
 
 .sarakkeita4 {
     td {
-        width: 24%
+        width: 25%
     }
 }
 
@@ -91,30 +92,48 @@ table.noborder *{
 
 .sarakkeita6 {
     td {
-        width: 14%
+        width: 15%
     }
 }
 
 .sarakkeita7 {
     td {
-        width: 13%
+        width: 12%
     }
 }
 
 .sarakkeita8 {
     td {
-        width: 11%;
+        width: 10%;
     }
 }
 
 .sarakkeita9 {
     td {
-        width: 10%;
+        width: 8%;
     }
 }
 
 .sarakkeita10 {
     td {
-        width: 9%;
+        width: 7%;
+    }
+}
+
+.sarakkeita11 {
+    td {
+        width: 6%;
+    }
+}
+
+.sarakkeita12 {
+    td {
+        width: 5%;
+    }
+}
+
+.sarakkeita13 {
+    td {
+        width: 4%;
     }
 }
