@@ -956,8 +956,8 @@ div.nav {
 
 p {
   display: block;
-  margin-top: 0.7em;
-  margin-bottom: 0; }
+  margin-top: 1em;
+  margin-bottom: 1em; }
 
 .johdanto {
   font-weight: bold;
@@ -1004,7 +1004,7 @@ pagenum {
   background-color: #a0eea5;
   border-style: none; }
   .pohja1 .heading, .pohja1 .otsikko, .pohja1 h2, .pohja1 h3, .pohja1 h4, .pohja1 h5, .pohja1 h6 {
-    margin-top: 0;
+    margin-top: 1em;
     margin-bottom: 1em;
     border-bottom-style: solid;
     border-width: 2px;
@@ -1021,7 +1021,7 @@ pagenum {
   background-color: #a0c4ee;
   border-style: none; }
   .pohja2 .heading, .pohja2 .otsikko, .pohja2 h2, .pohja2 h3, .pohja2 h4, .pohja2 h5, .pohja2 h6 {
-    margin-top: 0;
+    margin-top: 1em;
     margin-bottom: 1em;
     border-bottom-style: solid;
     border-width: 2px;
@@ -1038,7 +1038,7 @@ pagenum {
   background-color: #eec0a0;
   border-style: none; }
   .pohja3 .heading, .pohja3 .otsikko, .pohja3 h2, .pohja3 h3, .pohja3 h4, .pohja3 h5, .pohja3 h6 {
-    margin-top: 0;
+    margin-top: 1em;
     margin-bottom: 1em;
     border-bottom-style: solid;
     border-width: 2px;
