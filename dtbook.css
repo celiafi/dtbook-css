@@ -3,6 +3,9 @@
  *
  *  CHANGELOG
  *
+ *  1.0.2, released 19.1.2015
+ *  Fix widths for tables with 3-13 columns
+ *
  *  1.0.1, released 19.1.2015
  *  Increase top margins for all paragraphs.
  *  Increase top margins for headings inside 'pohja'.
@@ -1116,30 +1119,40 @@ table.noborder,
 table.noborder * {
   border: none; }
 
-/* 3-7 saraketta */
+/* Tables with over 3 columns */
+/* Magic numbers discovered by experimentation and much frustration. */
 .sarakkeita3 td {
-  width: 32%; }
+  width: 35%; }
 
 .sarakkeita4 td {
-  width: 24%; }
+  width: 25%; }
 
 .sarakkeita5 td {
   width: 19%; }
 
 .sarakkeita6 td {
-  width: 14%; }
+  width: 15%; }
 
 .sarakkeita7 td {
-  width: 13%; }
+  width: 12%; }
 
 .sarakkeita8 td {
-  width: 11%; }
-
-.sarakkeita9 td {
   width: 10%; }
 
+.sarakkeita9 td {
+  width: 8%; }
+
 .sarakkeita10 td {
-  width: 9%; }
+  width: 7%; }
+
+.sarakkeita11 td {
+  width: 6%; }
+
+.sarakkeita12 td {
+  width: 5%; }
+
+.sarakkeita13 td {
+  width: 4%; }
 
 oxy|entity {
   background-color: inherit !important;
