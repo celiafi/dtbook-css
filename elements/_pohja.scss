@@ -9,6 +9,11 @@
     border-style: none;
 
     .heading, .otsikko, h2, h3, h4, h5, h6 {
+        @include margins-mid;
+        @include underline(desaturate(darken($color, $lightness-difference), $saturation-difference));
+    }
+
+    .heading:first-child, .otsikko:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
         @include margins-smaller;
         @include underline(desaturate(darken($color, $lightness-difference), $saturation-difference));
     }
