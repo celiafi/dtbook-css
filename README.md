@@ -12,7 +12,7 @@ At heart, dtbook-css is basically your run-of-the-mill SASS project. Just build 
 
 The project structure is quite simple: directory oxygen contains everything directly related to only Oxygen XML editor; globals contains reset, mixins and variable definitions; and elements contain actual rules for styling content.
 
-The project follows the same underlying principles as SMACSS/DRY/OOCSS; I wouldn't call it exactly any of those, however. Classes are only used when necessary. IDs are not used at all; IDs for styling are evil, and IDs are required for synchronization anyway. For an example of the principles, see http://denisejacobs.com/speaking/talks/scalable-modular-css-ftw/ - especially starting from slide 75.
+The project follows the same underlying principles as SMACSS/DRY/OOCSS; I wouldn't call it exactly any of those, however. Classes are only used when necessary. IDs are not used at all; IDs for styling are evil, and in DTBook, IDs are reserved for synchronization anyway. For an example of the principles, see http://denisejacobs.com/speaking/talks/scalable-modular-css-ftw/ - especially starting from slide 75.
 
 Especially, the OOCSS principle of separating container and content is dismissed entirely, because the structure is rigid; furthermore, one of the key points of dtbook-css is to decrease production time by cutting usage of extraneous classes et cetera to a minimum.
 
