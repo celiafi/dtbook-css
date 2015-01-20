@@ -24,6 +24,8 @@ Specially styled elements are defined by using template mixins; see for example 
 
 For tables, the amount of columns (if >2) must be specified using a class - see _tables.scss.
 
+A preliminary reset is included (globals/_reset.scss); this is very much a work in progress to be pursued further when starting to work on a) EPUB and b) mobile devices.
+
 Because there's a need for synchronizing narrated / synthesized voice to the text, most of what would be <ol> lists in vanilla html are actually pre-formatted lists. This means that for example exercise lists in textbooks must be marked up using a special structure. For the time being, see _lists.scss for the stylesheet.
 
 The framework strives to cover most aspects of DTBooks. For the DTD for DTBook, see http://www.daisy.org/z3986/2005/dtbook/dtbookdoc.html
