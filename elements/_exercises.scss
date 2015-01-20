@@ -1,0 +1,149 @@
+/* CUSTOM RULES FOR NESTED EXERCISE LISTS *********************************** */
+/* ************************************************************************** */
+
+/* Do NOT touch this part of code under ANY circumstances whatsoever. Do NOT
+even think about it. This code is VITAL. Yes it is ugly. Yes it is *A BIT* of a
+hack. I feel you. I don't like it either. Unfortunately, there's no way around
+it - for the time being we are stuck with Dolphin EasyReader, which uses IE7
+standards layout engine, so I had to do some quite heavy black magic. */
+
+/* OK, few circumstances:
+1) You're getting rid of hard-coded negative top margins and replacing them with
+   line-height variable. That's ok. Don't fuck up.
+2) You finally got rid of IE7. Congratulations! */
+
+/* I spent about three days on this code. THREE DAYS. ON THIS. */
+
+
+/* Set up key variables. NB: if list line height is changed, changes here may 
+   be necessary as well! */
+$nested-line-height:        1.5em;
+$list-item-margin:          1em;
+$list-marker-width:         2em;
+$secondary-marker-margin:   0.7em;
+
+
+/* *+html div.level2 selector targets only IE7. Do NOT touch it. */
+*+html div.level,
+*+html div.level1,
+*+html div.level2,
+*+html div.level3,
+*+html div.level4,
+*+html div.level5,
+*+html div.level6 {
+    
+    ul.plain {
+
+        /* Target exercisenumber. Float left removes element from content flow.
+           Top margin is run-of-the-mill top margin, as the element's y
+           position is still default. */
+        span.exercisenumber {
+            display:        block;
+            float:          left;
+            margin-top:     $list-item-margin;
+        }
+
+        /* Target whatever comes afterwards (ordinary text). Display as block
+           to achieve justified left border. Margin-left sets the space for
+           list marker. Negative margin-top is necessary to account for the
+           (floated) list marker. 
+
+           ONLY spans can be targeted. To do otherwise would introduce
+           ambiguity and much potential for disasters. This means that if the
+           text is to be bolded, bold must be enclosed within the span. In 
+           other words, the high-level structure must be_exactly as specified;
+           however, the content of high-level containers may be arbitrary. */
+        span.exercisenumber + span {
+            display:        block;
+            margin-top:     -$nested-line-height + $list-item-margin;
+            margin-left:    $list-marker-width;
+        }
+
+        /* If a secondary marker follows, it must be displayed as inline, as
+           the actual content is yet to be displayed; block would cause a break.
+           Margin-left is kind of a magic number here, don't really know where
+           it came from, but I'm guessing it's got something to do with word
+           spacing or something. Anyhow, it's at the end just an ordinary left
+           margin. Top margin is again ROTM top margin, 0 just to signify that
+           as opposed to any other span, this one does NOT have to be moved
+           upwards, because this is inline. */
+        span.exercisenumber + span.exercisepart {
+            display:        inline;
+            margin-top:     0 + $list-item-margin;
+            margin-left:    $secondary-marker-margin;
+        }
+
+        /* A free-hanging exercisepart. Basically the same as exercisenumber. */
+        span.exercisepart {
+            float:          left;
+            margin-top:     0;
+            margin-left:    $list-marker-width;
+        }
+
+        /* After exercisepart, the actual content follows pretty much the same
+           rules as with exercisenumber. Of course, left margin must be
+           increased to account for nesting. */
+        span.exercisepart + span {
+            display:        block;
+            margin-top:     -$nested-line-height;
+            margin-left:    2 * $list-marker-width;
+        }
+
+        /* Rules for the actual content, when exercisepart is on the same line
+           as the exercisenumber. Double left margin, otherwise the same as
+           normal content. */
+        span.exercisenumber + span.exercisepart + span {
+            display:        block;
+            margin-top:     -$nested-line-height + $list-item-margin;
+            margin-left:    2 * $list-marker-width;
+        }
+
+    }
+}
+
+
+/* Webkit (Chrome, Safari). As everything pretty much works as expected, I
+   don't think extensive comments are necessary. */
+
+    
+div.level,
+div.level1,
+div.level2,
+div.level3,
+div.level4,
+div.level5,
+div.level6 {
+
+    ul.plain {
+
+        span.exercisenumber {
+            float:          left;
+        }
+
+        span.exercisenumber + span {
+            display:        block;
+            margin-top:     $list-item-margin;
+            margin-left:    $list-marker-width;
+        }
+
+        span.exercisenumber + span.exercisepart {
+            margin-top:     0;
+            margin-left:    $secondary-marker-margin;
+        }
+
+        span.exercisepart {
+            float:          left;
+            margin-left:    $list-marker-width;
+        }
+
+        span.exercisepart + span {
+            display:        block;
+            margin-left:    2 * $list-marker-width;
+        }
+
+        span.exercisenumber + span.exercisepart + span {
+            margin-top:     $list-item-margin;
+        }
+
+    }
+}
