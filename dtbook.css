@@ -918,9 +918,9 @@ table {
   border-width: 1px;
   border-color: #666666;
   background-color: #6998ce;
-  width: 80%;
+  width: 100%;
   empty-cells: show;
-  table-layout: auto;
+  table-layout: fixed;
   border-spacing: 0; }
   table caption {
     text-align: center; }
@@ -955,7 +955,6 @@ td {
   background-color: #e6e6e6;
   text-align: left;
   height: auto;
-  width: 50%;
   vertical-align: inherit; }
 
 td.keskitetty + img, td.keskitetty {
@@ -1008,6 +1007,9 @@ table.noborder * {
 
 .sarakkeita13 td {
   width: 4%; }
+
+table.auto {
+  table-layout: auto; }
 
 oxy|entity {
   background-color: inherit !important;

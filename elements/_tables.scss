@@ -6,9 +6,9 @@ table {
     @include borders-thin($border-color);
     background-color: $accent-color-2;
 
-    width: $narrow;
+    width: $default-width;
     empty-cells: show;
-    table-layout: auto;
+    table-layout: fixed;
     //border-collapse breaks stuff, see alternatives
     //border-collapse: collapse;
     border-spacing: 0;
@@ -41,7 +41,6 @@ td {
     background-color: $background-color;
     text-align: left;
     height: auto;
-    width: 50%;
     vertical-align: inherit;
 }
 
@@ -136,4 +135,8 @@ table.noborder *{
     td {
         width: 4%;
     }
+}
+
+table.auto {
+    table-layout: auto;
 }
