@@ -1,6 +1,9 @@
 /* CUSTOM RULES FOR NESTED EXERCISE LISTS *********************************** */
 /* ************************************************************************** */
 
+/* This section is heavily dependent on having the correct structure. Working
+remotely, don't have access to the code. TODO: add this! */
+
 /* Do NOT touch this part of code under ANY circumstances whatsoever. Do NOT
 even think about it. This code is VITAL. Yes it is ugly. Yes it is *A BIT* of a
 hack. I feel you. I don't like it either. Unfortunately, there's no way around
@@ -9,7 +12,7 @@ standards layout engine, so I had to do some quite heavy black magic. */
 
 /* OK, few circumstances:
 1) You're getting rid of hard-coded negative top margins and replacing them with
-   line-height variable. That's ok. Don't fuck up.
+   line-height variable. That's ok. Don't mess up.
 2) You finally got rid of IE7. Congratulations! */
 
 /* I spent about three days on this code. THREE DAYS. ON THIS. */
@@ -51,7 +54,7 @@ $secondary-marker-margin:   0.7em;
            ONLY spans can be targeted. To do otherwise would introduce
            ambiguity and much potential for disasters. This means that if the
            text is to be bolded, bold must be enclosed within the span. In 
-           other words, the high-level structure must be_exactly as specified;
+           other words, the high-level structure must be exactly as specified;
            however, the content of high-level containers may be arbitrary. */
         span.exercisenumber + span {
             display:        block;
@@ -102,8 +105,9 @@ $secondary-marker-margin:   0.7em;
 }
 
 
-/* Webkit (Chrome, Safari). As everything pretty much works as expected, I
-   don't think extensive comments are necessary. */
+/* Webkit (Chrome, Safari); Trident (IE, non-7); Gecko (FF).
+   As everything pretty much works as expected, I don't think extensive
+   comments are necessary. */
 
     
 div.level,
