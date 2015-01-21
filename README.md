@@ -7,7 +7,7 @@ dtbook-css is compatible with (at least) Oxygen XML editor (especially so when a
 
 dtbook-css is meant to be a long-term, one size fits all-type of solution for rapid production of DTBook.
 
-# Tech & architecture
+## Tech & architecture
 At heart, dtbook-css is basically your run-of-the-mill SASS project. Just build dtbook.scss with whatever you prefer.
 
 The project structure is quite simple: directory oxygen contains everything directly related to only Oxygen XML editor; globals contains reset, mixins and variable definitions; and elements contain actual rules for styling content.
@@ -22,7 +22,7 @@ Colors are managed using two-tiered variable system containing both descriptive 
 
 Specially styled elements are defined by using template mixins; see for example _kehys.scss
 
-For tables, the amount of columns (if >2) must be specified using a class - see _tables.scss.
+Tables default to fixed layout. Auto can be specified by class="auto". NB.: Fixed does not work in Oxygen.
 
 A preliminary reset is included (globals/_reset.scss); this is very much a work in progress to be pursued further when starting to work on a) EPUB and b) mobile devices.
 

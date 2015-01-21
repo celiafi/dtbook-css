@@ -1,7 +1,12 @@
-/* VERSION 1.0.1
+/* VERSION 1.0.3
  *
  *
  *  CHANGELOG
+ *
+ *  1.0.3, released 20.1.2015
+ *  Default table-layout to fixed
+ *  Add table.auto  
+ *  Fix table width
  *
  *  1.0.2, released 19.1.2015
  *  Fix widths for tables with 3-13 columns
