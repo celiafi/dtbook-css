@@ -9,6 +9,8 @@ table {
     width: $default-width;
     empty-cells: show;
     table-layout: fixed;
+    word-break: normal;
+
     //border-collapse breaks stuff, see alternatives
     //border-collapse: collapse;
     border-spacing: 0;
@@ -60,83 +62,13 @@ table+caption {
 }
 
 
-
-
-/* TABLE NO BORDERS */
+/* NO BORDERS */
 table.noborder,
 table.noborder *{
     border: none;
 }
 
-
-/* Tables with over 3 columns */
-/* Magic numbers discovered by experimentation and much frustration. */
-.sarakkeita3 {
-    td {
-        width: 35%
-    }
-}
-
-.sarakkeita4 {
-    td {
-        width: 25%
-    }
-}
-
-.sarakkeita5 {
-    td {
-        width: 19%
-    }
-}
-
-.sarakkeita6 {
-    td {
-        width: 15%
-    }
-}
-
-.sarakkeita7 {
-    td {
-        width: 12%
-    }
-}
-
-.sarakkeita8 {
-    td {
-        width: 10%;
-    }
-}
-
-.sarakkeita9 {
-    td {
-        width: 8%;
-    }
-}
-
-.sarakkeita10 {
-    td {
-        width: 7%;
-    }
-}
-
-.sarakkeita11 {
-    td {
-        width: 6%;
-    }
-}
-
-.sarakkeita12 {
-    td {
-        width: 5%;
-    }
-}
-
-.sarakkeita13 {
-    td {
-        width: 4%;
-    }
-}
-
+/* AUTO LAYOUT */
 table.auto {
     table-layout: auto;
 }
