@@ -1,7 +1,10 @@
-/* VERSION 1.0.3
+/* VERSION 1.1.0
  *
  *
  *  CHANGELOG
+ *
+ *  1.1.0, released 21.1.2015
+ *  Remove tables with set number of columns as deprecated.
  *
  *  1.0.3, released 20.1.2015
  *  Default table-layout to fixed
