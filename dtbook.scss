@@ -1,7 +1,10 @@
-/* VERSION 1.1.0
+/* VERSION 1.1.1
  *
  *
  *  CHANGELOG
+ *
+ *  1.1.1, released 22.1.2015
+ *  Exercise bugfix.
  *
  *  1.1.0, released 21.1.2015
  *  Remove tables with set number of columns as deprecated.
@@ -47,6 +50,7 @@
 
 @import 'elements/_blocks.scss';
 @import 'elements/_bookbody.scss';
+@import 'elements/_breaks.scss';
 @import 'elements/_breaks.scss';
 @import 'elements/_headings.scss';
 @import 'elements/_images.scss';

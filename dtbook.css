@@ -1,7 +1,10 @@
-/* VERSION 1.1.0
+/* VERSION 1.1.1
  *
  *
  *  CHANGELOG
+ *
+ *  1.1.1, released 22.1.2015
+ *  Exercise bugfix.
  *
  *  1.1.0, released 21.1.2015
  *  Remove tables with set number of columns as deprecated.
@@ -366,6 +369,19 @@ docauthor {
   margin-top: 2em;
   margin-bottom: 1em;
   font-size: 140%; }
+
+/* Render line breaks after br tags. !important is required for Oxygen. */
+br {
+  display: inline !important; }
+  br::after {
+    content: "\a";
+    white-space: normal;
+    visibility: hidden; }
+
+hr {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  color: #5ecf66; }
 
 /* Render line breaks after br tags. !important is required for Oxygen. */
 br {
