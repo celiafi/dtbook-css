@@ -1027,11 +1027,6 @@ p {
   font-size: 80%;
   font-style: italic; }
 
-/*
-@media only screen and (max-width: 1024px) {
-  p {color:red;}
-}
-*/
 /* PAGENUM, LINENUM ********************************************************* */
 /* ************************************************************************** */
 .page-normal,
@@ -1202,40 +1197,40 @@ table.auto {
 */
 /* Small screens */
 @media only screen and (max-width: 768px) {
-  table, thead, tbody, th, td, tr {
-    display: block; }
+    /* Requires markup
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
 
-  thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px; }
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
 
-  tr {
-    border: 1px solid #ccc; }
+    tr { border: 1px solid #ccc; }
 
-  td {
-    /* Behave like a "row" */
-    border: none;
-    border-bottom: 1px solid #eee;
-    position: relative;
-    padding-left: 50%;
-    white-space: normal;
-    text-align: left; }
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align:left;
+    }
 
-  td:before {
-    /* Now like a table header */
-    position: absolute;
-    /* Top/left values mimic padding */
-    top: 6px;
-    left: 6px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap;
-    text-align: left;
-    font-weight: bold; }
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align:left;
+        font-weight: bold;
+    }
 
-  td:before {
-    content: "Hello"; } }
+    td:before { content: attr(data-title); }*/ }
 oxy|entity {
   background-color: inherit !important;
   margin: 0 !important;

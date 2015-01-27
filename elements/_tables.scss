@@ -88,6 +88,7 @@ table.auto {
 /* Small screens */
 @media only screen and (max-width: $page-width) {
 
+    /* Requires markup
     table, thead, tbody, th, td, tr {
         display: block;
     }
@@ -101,7 +102,6 @@ table.auto {
     tr { border: 1px solid #ccc; }
 
     td {
-        /* Behave like a "row" */
         border: none;
         border-bottom: 1px solid #eee;
         position: relative;
@@ -111,9 +111,7 @@ table.auto {
     }
 
     td:before {
-        /* Now like a table header */
         position: absolute;
-        /* Top/left values mimic padding */
         top: 6px;
         left: 6px;
         width: 45%;
@@ -123,5 +121,5 @@ table.auto {
         font-weight: bold;
     }
 
-    td:before { content: "Hello"/*attr(data-title)*/; }
+    td:before { content: attr(data-title); }*/
 }
