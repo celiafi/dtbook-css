@@ -102,3 +102,14 @@ linenum:after {
     background-color: $dark-grey;
     color: $light-gray;
 }
+
+
+/* Small screens */
+
+@media only screen and (max-width: $page-width) {
+    span.sentence {
+        // Separate sentences from each other
+        display: inline-block;
+        @include margins-smallest;
+    }
+}
