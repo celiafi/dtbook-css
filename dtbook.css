@@ -383,11 +383,13 @@ docauthor {
     line-height: 1.6;
     letter-spacing: 0.1em;
     word-spacing: 0.12em;
-    position: absolute;
     background-color: #e6e6e6;
     margin-top: 0;
     margin-bottom: 0;
-    margin-right: auto; }
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 1em;
+    padding-right: 1em; }
 
   frontmatter, .frontmatter,
   bodymatter, .bodymatter,
@@ -618,6 +620,10 @@ bridgehead, hd {
   letter-spacing: 0.12em;
   font-size: 120%; }
 
+@media only screen and (max-width: 768px) {
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 1em;
+    margin-bottom: 1em; } }
 /* IMAGES ******************************************************************* */
 /* ************************************************************************** */
 imggroup,
@@ -1047,6 +1053,13 @@ pagenum {
   border-top: solid thin #333333;
   padding-top: 2em; }
 
+@media only screen and (max-width: 768px) {
+  .page-normal,
+  .page-special,
+  .page-front,
+  .pagenum {
+    text-align: left;
+    padding-top: 1em; } }
 /* TEMPLATE ***************************************************************** */
 /* ************************************************************************** */
 .pohja1 {
@@ -1203,6 +1216,14 @@ table.auto {
 */
 /* Small screens */
 @media only screen and (max-width: 768px) {
+  table.auto {
+    table-layout: fixed; }
+
+  table td, table th {
+    font-size: 60%;
+    letter-spacing: 0;
+    word-break: break-all; }
+
     /* Requires markup
     table, thead, tbody, th, td, tr {
         display: block;

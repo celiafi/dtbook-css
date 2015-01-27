@@ -90,11 +90,13 @@ docauthor {
 
     book, body {
         @include default-font;
-        position: absolute;
         background-color:   $background-color;
         margin-top:         0;
         margin-bottom:      0;
-        margin-right:       auto;
+        margin-right:       0;
+        margin-left:        0;
+        padding-left:       1em;
+        padding-right:      1em;
     }
 
     frontmatter, .frontmatter,

@@ -88,8 +88,19 @@ table.auto {
 /* Small screens */
 @media only screen and (max-width: $page-width) {
 
-    
-    
+    // Small screen tables currently a dirty hack to allow reviewing other stuff
+    table.auto {
+        table-layout: fixed;
+    }
+
+    table {
+        td, th {
+            font-size: 60%;
+            letter-spacing: 0;
+            word-break: break-all;
+        }
+    }
+
     /* Requires markup
     table, thead, tbody, th, td, tr {
         display: block;

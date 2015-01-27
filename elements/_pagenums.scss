@@ -12,3 +12,13 @@ pagenum {
     border-top: solid thin $almost-black;
     padding-top: 2em;
 }
+
+@media only screen and (max-width: $page-width) {
+  .page-normal,
+  .page-special,
+  .page-front,
+  .pagenum {
+    text-align: left;
+    padding-top: 1em;
+  }
+}
