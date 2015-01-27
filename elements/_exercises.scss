@@ -151,3 +151,10 @@ div.level6 {
 
     }
 }
+
+
+/* Small screens require some overrides */
+
+@media only screen and (max-width: $page-width) {
+
+}

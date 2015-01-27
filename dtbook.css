@@ -580,6 +580,7 @@ div.level5 ul.plain span.exercisenumber + span.exercisepart + span,
 div.level6 ul.plain span.exercisenumber + span.exercisepart + span {
   margin-top: 1em; }
 
+/* Small screens require some overrides */
 /* HEADINGS ***************************************************************** */
 /* ************************************************************************** */
 /* BASE ********************************************************************* */
@@ -986,6 +987,12 @@ list li list {
 
 /* DEFINITION LIST ********************************************************** */
 /* ************************************************************************** */
+/* Small screens */
+@media only screen and (max-width: 768px) {
+  li {
+    margin-top: 0.7em; }
+    li span.sentence {
+      display: inline; } }
 /* NAVIGATION HEADERS ******************************************************* */
 /* ************************************************************************** */
 div.nav {

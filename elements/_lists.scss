@@ -105,3 +105,15 @@ dt {
 dd {
     
 }
+
+/* Small screens */
+
+@media only screen and (max-width: $page-width) {
+    li {
+        margin-top: 0.7em;
+        span.sentence {
+            // overrides inline-block
+            display: inline;
+        }
+    }   
+}
