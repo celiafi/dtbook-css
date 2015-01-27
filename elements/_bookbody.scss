@@ -57,7 +57,6 @@ rearmatter, .rearmatter {
     padding-top:    2em;
 }
 
-
 doctitle, covertitle, .doctitle {
     @include default-font;
     @include margins-large;
@@ -78,4 +77,31 @@ docauthor {
     @include default-font;
     @include margins-mid;
     font-size: 140%;
+}
+
+
+/* SMALL SCREENS */
+@media only screen and (max-width: $page-width) {
+    //*{color:red;} //debug help
+
+    dtbook {
+        width: 100%;
+    }
+
+    book, body {
+        @include default-font;
+        position: absolute;
+        background-color:   $background-color;
+        margin-top:         0;
+        margin-bottom:      0;
+        margin-right:       auto;
+    }
+
+    frontmatter, .frontmatter,
+    bodymatter, .bodymatter,
+    rearmatter, .rearmatter {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

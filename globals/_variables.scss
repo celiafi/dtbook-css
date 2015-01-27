@@ -5,7 +5,8 @@
 /* DIMENSIONS */
 
 // This MUST be a constant pixel amount.
-$page-width:                750px;
+// Use same width as a breakpoint for responsive design?
+$page-width:                768px;
 
 // This MUST be a relative percentage.
 $max-page-width:            100%;

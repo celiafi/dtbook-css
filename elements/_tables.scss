@@ -72,3 +72,56 @@ table.noborder *{
 table.auto {
     table-layout: auto;
 }
+
+/* Responsive table design notes
+- Possibility for classification of tables into:
+    - Small-screen friendly (work as is)
+    - Blockable (turn each row into a block)
+    - Chartable (might not be possible)
+    - Difficult (must be dealt with on a case by case basis)
+- For more, see http://alistapart.com/article/designing-for-breakpoints
+
+- http://css-tricks.com/responsive-data-tables/
+
+*/
+
+/* Small screens */
+@media only screen and (max-width: $page-width) {
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr { border: 1px solid #ccc; }
+
+    td {
+        /* Behave like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align:left;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align:left;
+        font-weight: bold;
+    }
+
+    td:before { content: "Hello"/*attr(data-title)*/; }
+}
