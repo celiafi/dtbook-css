@@ -11,13 +11,14 @@ $page-width:                768px;
 // This MUST be a relative percentage.
 $max-page-width:            100%;
 
-// General widths in relation to the parent.
+// General widths relative to the parent.
 $default-width:             100%;
 $narrow:                    80%;
 $narrower:                  70%;
 
 
 /* Line heights */
+/* These MUST be relative for proper cascading! */
 $default-line-height:       1.6;
 
 $tight:                     1.5;
@@ -29,6 +30,7 @@ $looser:                    2.0;
 
 
 /* Font sizes */
+/* These MUST be relative for proper cascading! */
 $default-font-size:         100%;
 
 $small:                     95%;
@@ -43,7 +45,7 @@ $huge:                      170%;
 
 
 /* Spacings */
-
+/* These MUST be relative for proper cascading! */
 $letter-spacing-default:    0.1em;
 $letter-spacing-wide:       0.12em;
 $word-spacing-default:      0.12em;

@@ -52,3 +52,24 @@ The easiest way for users to build the project is probably with Sublime Text's s
 2. `Tools` -> `Build` or `ctrl + B`
 
 This builds the whole project into `dtbook.css` file in the same folder as `dtbook.scss`.
+
+## Editing
+
+The main project file is `dtbook.scss`. The main project file itself contains no rules. It only imports the other files that contain the actual style rules. It also has a namespace declaration for Oxygen. If new partials (files starting with `_` and containing rules) are added, they must be added to the partials import list. Everything under `global` must be imported in correct order (resets first, then variables and so on). Elements may be imported in any order; current convention is alphabetical ordering. Namespace declaration must not be altered; doing so will break Oxygen support.
+
+`_reset.scss` is a *reset stylesheet*. The basic idea of a reset stylesheet is to reduce inconsistencies between different browsers and layout engines. This is done by explicitly setting properties that may have different default values in different layout engines. For further discussion, see for example [Reset Reasoning](http://meyerweb.com/eric/thoughts/2007/04/18/reset-reasoning/). The current `_reset.scss` (as of Nov 2015) is very bare-bones. Edits will be required for proper mobile device support.
+
+`_colors.scss` contains color definitions. See comments in the file itself. Two-tiered color management is *important*, so give it some time if it's not making sense at first.
+
+`_variables.scss` contains general global variables, such as widths, line heights and letter spacings.
+
+`_mixins.scss` contains general features and feature combinations, that may be used in multiple different contexts. For example, rounded corners may be used anywhere irrespective of the type and class of element that it's used on; vice versa, we might want some images to have rounded corners and others not, for example. This means that rounded corners is not bound to any single class or element type and is distinct from them.
+
+`_margins.scss` contains margin definitions. Note again the two-tiered approach, somewhat similar to colors, but simpler.
+
+`_borders.scss` contains border definitions. Once again, here we declare and define different types of borders that are then used on elements. Default color is supplied (see [Sass documentation](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)), but may be overridden.
+
+`_paddings.scss` contains padding definitions. Similar to margins and borders.
+
+`_fonts.scss` contains fonts. Note the use of font-related variables and default values.
+
