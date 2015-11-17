@@ -25,7 +25,7 @@
 ## 1.0.0, released 15.1.2015
 * Initial release. Import all existing code from old codebase.
 
---- 
+---
 
 Versioning scheme based on [Ferver](https://github.com/jonathanong/ferver).
 In scheme `x.y.z`, `z` stands for non-breaking changes. For example, colour changes, layout changes, dimension changes et cetera. `y` stands for minor breaking changes, such as deprecation of a small number of classes. `x` stands for major breaking changes - a complete overhaul would require incrementing `x`.
