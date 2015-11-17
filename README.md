@@ -32,3 +32,23 @@ The framework strives to cover most aspects of DTBooks. For the DTD for DTBook, 
 Furthermore, the framework supports additional classes that Celia - the Finnish library for the visually impaired use in their production of DTBooks. Given that DTBook standard sets strict boundaries on the possible structures of content, and that in-house DaisyTRIO production can be quite freely forced to adhere to standardification, building a somewhat rigid and normative framework suitable for all future needs is not only possible, but also beneficial.
 
 In the future, the framework will be extended to cover EPUB3 as well.
+
+## Build suggestions
+The easiest way for users to build the project is probably with Sublime Text's sass-textmate-bundle.
+
+### Build system installation
+
+1. Install [Sublime Text 2](http://www.sublimetext.com/2).
+2. Install Ruby. Download [Ruby for Windows](rubyinstaller.org/downloads) and install as Executable in PATH.
+3. Install SASS. Open Start menu and type `cmd` and press enter. Type `gem install sass` and press enter.
+4. Install [Package Control](https://packagecontrol.io/installation) for Sublime Text.
+5. Install SASS textmate bundle with Package Control. Click `Preferences` -> `Package Control` -> `Install Package` -> Type `sass` -> click on `Sass`. The description text is "Sass support for TextMate & Sublime Text (2 & 3)".
+6. Install SASS Build with Package Control.
+7. Restart Sublime Text.
+
+### Building
+
+1. Open dtbook.scss in Sublime Text.
+2. `Tools` -> `Build` or `ctrl + B`
+
+This builds the whole project into `dtbook.css` file in the same folder as `dtbook.scss`.
