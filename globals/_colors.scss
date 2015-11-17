@@ -1,21 +1,54 @@
 /* COLORS */
 
+/*
+Before making edits, please read sachagreif.com/sass-color-variables/.
+The idea is basically to first decide on some number of colors that will be used
+in the books ($h0 through $h1 with shades s2-s4). These correspond to real-world
+colors, for example "orange" or "blue". These colors are however NOT used
+directly on elements - they are referenced by functional colors, which are used
+in elements.
+
+This layered approach solves a lot of possible problems with colors. Suppose you
+want to fine-tune the colour scheme, so that everything that's been blue is
+still blue, but just a bit different shade. You only need to touch $h2
+variables, for example make everything a bit lighter or darker or more or less
+saturated.
+
+Suppose you want to do away with orange color completely and have pink instead?
+No problem, just change $h0 to suitable pink hue. Notice that this is the reason
+for having abstract $hN variables instead of concrete $pink or $orange. There
+may be need to change the color scheme completely, in which case we'd end up
+having color names like $orange being actually pink, which makes no sense and is
+evil and bad.
+
+Numbers in $alt-bg-colors and $accent-colors refer to alternatively decorated
+blocks; see for example _pohja.scss. The convention is to have element of class
+whatever1 to use colours based on $h1; class whatever2 uses of course colors
+based on $h2.
+*/
+
 /* Color adjustment variables */
+/* TODO: not used - deprecate? */
 $lightness-difference:  30%;
 $saturation-difference: 15%;
 
 /* HSL values */
-$h0:  37deg;
-$h1:  124deg;
-$h2:  212deg;
-$h3:  25deg;
 
+/* Baseline hues */
+$h0:  37deg;  // Orange
+$h1:  124deg; // Turquoise
+$h2:  212deg; // Blue
+$h3:  25deg;  // Red
+
+/* Baseline saturation and lightness */
 $s0:  70%;
 $l0:  78%;
 
 
 
 /* Descriptive colors */
+
+/* Note the usage of baseline hues and modified saturations and lightnesses! */
 
 // ORANGE
 $h0-s2: hsl($h0, $s0, $l0);
