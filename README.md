@@ -17,7 +17,7 @@ If you're just interested in using the CSS as is, download [dtbook.css](https://
 
 ## Downloading
 
-If you want to edit the CSS, you can download the project as a [zip](https://github.com/jukkae/dtbook-css/archive/master.zip).
+If you want to edit the styles, you can download the project as a [zip](https://github.com/jukkae/dtbook-css/archive/master.zip).
 
 ## Building
 
