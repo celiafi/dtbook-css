@@ -28,11 +28,31 @@ based on $h2.
 */
 
 /* Color adjustment variables */
-/* TODO: not used - deprecate? */
+/* Used in _pohja.scss, underlining of headers. */
 $lightness-difference:  30%;
 $saturation-difference: 15%;
 
 /* HSL values */
+/*
+I'm using HSL instead of RGB or hex, because it separates the hue, ie., the
+primary color attribute, from saturation and lightness, which deal with how
+'bright' the color is. This means, at least in theory, that *hues* can be
+modified easily and independently from the *shades*. Want to make keep the hues
+in the book but increase brightness? Keep hues as they are, change saturations
+and lightnesses. Want to change hues but keep saturation and lightness as they
+are? Just modify hues.
+
+The current implementation does not yet manage saturations and lightnesses
+completely based on baseline values; I'm not quite sure if it ever will, simply
+because human perception is a tricky beast to tame.
+
+Hues already work as intended. Want to turn everything that was orange into
+purple? Just change the corresponding baseline hue, $h0, to whatever purple hue
+strikes your fancy, for example 270deg. A handy calculator for HSL values:
+http://www.december.com/html/spec/colorhsltable.html
+
+Of course, nothing prevents you from adding colors using RGB or hex either.
+*/
 
 /* Baseline hues */
 $h0:  37deg;  // Orange
@@ -49,6 +69,26 @@ $l0:  78%;
 /* Descriptive colors */
 
 /* Note the usage of baseline hues and modified saturations and lightnesses! */
+
+/*
+This section defines shades (with different saturations and brightnesses) based
+on baseline hues above. You can play around with the values if you want to;
+try to keep some consistency in production use!
+
+The color variables are NOT named after the actual color described, but by an
+abstract index number. The reason: Suppose that we did change everything orange
+to purple, as in the example above. Now, if the color variable was called
+$orange but actually was purple, it'd be very hard to understand what's going
+on. Especially for someone else looking at the code, say, two years later.
+
+The grays can (should?) also be tinted, but this must be done carefully wrt.
+legibility. The grays are also called gray simply because I believe shades of
+gray are going to be used no matter what the styling accent colors will be. If
+I'm wrong, feel free to change them to whatever.
+
+If none of this makes any sense, feel free to override all this and define the
+colors in whatever way you feel is natural.
+*/
 
 // ORANGE
 $h0-s2: hsl($h0, $s0, $l0);
@@ -79,6 +119,17 @@ $almost-black:  #333333;
 
 
 /* Functional colors */
+
+/*
+Notice that here we don't actually use any sort of colour definitions, such as
+#FAFAFA or hsl($h0, 100%, 73%). Rather, we re-use the colors defined above in a
+manner that gives a functional name to what it's supposed to do, what is its
+significance.
+
+These are the variables that are (mostly) used in elements. All code above just
+makes it easier to manage colors. Or at the least, that's what it tries to do.
+*/
+
 $page-background-color:     $almost-white;
 $background-color:          $light-gray;
 $border-color:              $dark-grey;
