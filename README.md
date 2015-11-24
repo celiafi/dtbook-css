@@ -34,7 +34,7 @@ You can build the project with [Notepad++](https://notepad-plus-plus.org/) with 
 #### Notepad++-based
 
 3. Install Notepad++.
-4. Install [jN](https://github.com/sieukrem/jn-npp-plugin) plugin for Notepad++. (Download zip, unzip to Notepad++/plugins/.)
+4. Install [jN](https://github.com/sieukrem/jn-npp-plugin/releases/download/2.0.179/jN_2.0.179.zip) plugin for Notepad++. (Download zip, unzip to Notepad++/plugins/.)
 5. Copy [Sass-Auto-Compile.js](http://www.kuenzelit.de/blogContent/Sass-Auto-Compile.js) to Notepad++/plugins/jN/includes/.
 6. Configure the script: set pathToRubyBin correctly; set debugMode = false;.
 7. (Optional but highly recommended.) Configure syntax highlighting. Download http://www.kuenzelit.de/blogContent/sass-user-defined.xml and import in Notepad++ `View` -> `User defined language` -> `import`.
