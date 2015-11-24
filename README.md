@@ -53,6 +53,8 @@ You can build the project with [Notepad++](https://notepad-plus-plus.org/) with 
 
 1. Just save `dtbook.scss`.
 
+*Note:* Notepad++ does not give a confirmation when build is ready. It shouldn't take much longer than around five seconds, though.
+
 #### In Sublime Text
 
 1. Open `dtbook.scss` in Sublime Text.
