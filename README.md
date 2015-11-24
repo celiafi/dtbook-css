@@ -51,11 +51,11 @@ You can build the project with [Notepad++](https://notepad-plus-plus.org/) with 
 
 #### In Notepad++
 
-1. Just save dtbook.scss.
+1. Just save `dtbook.scss`.
 
 #### In Sublime Text
 
-1. Open dtbook.scss in Sublime Text.
+1. Open `dtbook.scss` in Sublime Text.
 2. `Tools` -> `Build` or `ctrl + B`
 
 This builds the whole project into `dtbook.css` file in the same folder as `dtbook.scss`. Old version of `dtbook.css` is overwritten.
