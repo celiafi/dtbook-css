@@ -28,7 +28,7 @@ You can build the project with [Notepad++](https://notepad-plus-plus.org/) with 
 
 #### Common steps
 
-1. Install Ruby. Download [Ruby for Windows](rubyinstaller.org/downloads) and install as Executable in PATH.
+1. Install Ruby. Download [Ruby for Windows](http://rubyinstaller.org/downloads/) and install as Executable in PATH.
 2. Install SASS. Open Start menu and type `cmd` and press enter. Type `gem install sass` and press enter.
 
 #### Notepad++-based
