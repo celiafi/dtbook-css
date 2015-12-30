@@ -3,8 +3,6 @@ SASS for DTBooks.
 
 Author: Jukka Eerikäinen 2015 jukka.eerikainen@aalto.fi
 
-License: TBD
-
 dtbook-css is a modular and extensible layout framework for DTBooks. dtbook-css is intended to be used both as the stylesheet for the end product and within the production toolchain.
 
 dtbook-css is compatible with (at least) Oxygen XML editor (especially so when augmented with [dtBookTools](https://github.com/jukkae/dtBookTools)), Dolphin EasyReader / Internet Explorer 7, and modern WebKit/Gecko/Trident-based browsers. Modern browser support is not widely tested. There is preliminary support for mobile devices, but mobile support is not yet satisfactory.
@@ -68,10 +66,17 @@ The project is structured modularly. `dtbook.scss` is the main SASS project file
 
 For more detailed information, see `HACKING.md` file.
 
-## Known bugs
+## License
 
-TBD
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-## Contributing
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-TBD
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
